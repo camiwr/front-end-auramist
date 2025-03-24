@@ -45,8 +45,7 @@ export default function Home() {
         <h3 className={styles.aviso}>Siga os passos para agendar seu próximo serviço de beleza</h3>
       </div>
       <div className={styles.botoes}>
-        <button className={styles.botaoP}>Entrar como Profissional</button>
-        <button onClick={goToLoginCli} className={styles.botaoC}>Entrar como<br /> Cliente</button>
+        <button onClick={goToLoginCli} className={styles.botaoC}>Entrar</button>
       </div>
       
       <Sobre />

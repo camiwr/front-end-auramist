@@ -1,11 +1,12 @@
-import styles from "@/styles/sideBar.module.css";
+import styles from "@/styles/sideBarClient.module.css";
 import { FiFolder, FiBriefcase, FiHeart, FiUser, FiLogOut } from "react-icons/fi";
 import { FaCalendarAlt } from "react-icons/fa";
+import React from 'react';
 import Image from "next/image";
 import { useRouter } from 'next/router';
 
 
-export default function BarraLateral() {
+export default function SideBarClient() {
     const router = useRouter();
 
     const handleLogout = ( ) => {
@@ -28,10 +29,6 @@ export default function BarraLateral() {
 
             <nav className={styles.navegacao}>
                 <ul>
-                    <li className={`${styles.menuItem} ${router.pathname === "/reservas" ? styles.active : ""}`}
-                        onClick={() => router.push('/reservas')}>
-                        <FiFolder className={styles.icone} /> Reservas
-                    </li>
                     <li className={`${styles.menuItem} ${router.pathname === "/cliente/agendamentos" ? styles.active : ""}`}
                         onClick={() => router.push('/cliente/agendamentos')}>
                         <FaCalendarAlt className={styles.icone} /> Agendamento
@@ -40,10 +37,10 @@ export default function BarraLateral() {
                         onClick={() => router.push('/cliente/dashboard')}>
                         <FiBriefcase className={styles.icone} /> Serviços
                     </li>
-                    <li className={`${styles.menuItem} ${router.pathname === "/favoritos" ? styles.active : ""}`}
+                    {/* <li className={`${styles.menuItem} ${router.pathname === "/favoritos" ? styles.active : ""}`}
                         onClick={() => router.push('/favoritos')}>
                         <FiHeart className={styles.icone} /> Favoritos
-                    </li>
+                    </li> */}
                     <li className={`${styles.menuItem} ${router.pathname === "/cliente/perfil" ? styles.active : ""}`}
                         onClick={() => router.push('/cliente/perfil')}>
                         <FiUser className={styles.icone} /> Perfil

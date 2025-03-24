@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
-import SideBar from '@/components/sideBar';
+import SideBar from '@/components/sideBarClient';
 import Carrossel from '@/components/carrossel';   
 import CardServicos from '@/components/cardServicos';
 import styles from '@/styles/dashboard.module.css';

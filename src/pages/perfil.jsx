@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Sidebar from "@/components/sideBar";
+import Sidebar from "@/components/sideBarClient";
 import Image from 'next/image';
 import { useRouter } from "next/router";
 import { AiOutlineEdit, AiOutlineMessage } from 'react-icons/ai';
