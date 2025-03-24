@@ -1,0 +1,22 @@
+.paginaContainer {
+  display: flex;
+  height: 96vh;
+}
+
+.conteudoPrincipal {
+  padding: 20px;
+  margin-left: 240px; 
+  overflow-y: auto;
+}
+
+.saudacaoCentralizada {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: black; 
+  margin-top: 20px; 
+}
+
+.nomeDestaque {
+  color: #A7C4E7; 
+}
