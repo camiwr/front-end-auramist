@@ -41,8 +41,8 @@ export default function SideBarClient() {
                         onClick={() => router.push('/favoritos')}>
                         <FiHeart className={styles.icone} /> Favoritos
                     </li> */}
-                    <li className={`${styles.menuItem} ${router.pathname === "/cliente/perfil" ? styles.active : ""}`}
-                        onClick={() => router.push('/cliente/perfil')}>
+                    <li className={`${styles.menuItem} ${router.pathname === "/perfil" ? styles.active : ""}`}
+                        onClick={() => router.push('/perfil')}>
                         <FiUser className={styles.icone} /> Perfil
                     </li>
                 </ul>
